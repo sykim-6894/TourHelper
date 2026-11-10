@@ -18,7 +18,7 @@ npm run dev      # http://localhost:5173
    - `KOPIS_API_KEY`: [공연예술통합전산망](https://www.kopis.or.kr) OPEN API 인증키 발급신청 → 공연
 3. `npm run fetch` 실행 → `public/data/events.json` 갱신
 
-하루 한 번 정도 `npm run fetch`를 돌리면 됩니다. 이 PC에는 Windows 작업 스케줄러에 `TourHelper-UpdateData` 작업이 등록되어 매일 07:00에 `scripts/update.cmd`를 실행하고, 결과를 `logs/fetch.log`에 남깁니다. 진행 중/예정 구분은 브라우저에서 오늘 날짜로 계산합니다.
+공개 사이트(https://sykim-6894.github.io/TourHelper/)는 GitHub Actions(`.github/workflows/deploy.yml`)가 매일 06:00(한국 시간)에 수집해 배포합니다. 키는 저장소 Secrets에 있습니다. PC에서 직접 갱신하려면 `npm run fetch`를 실행합니다. 진행 중/예정 구분은 브라우저에서 오늘 날짜로 계산합니다.
 
 ## 직접 등록 (팝업, 핫한 행사 등)
 
