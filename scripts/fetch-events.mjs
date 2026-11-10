@@ -17,6 +17,22 @@ const TOUR_ENDPOINT =
   process.env.TOUR_API_ENDPOINT ||
   'https://apis.data.go.kr/B551011/KorService2/searchFestival2';
 
+// ---------- 요청 ----------
+// 일시적인 네트워크 오류와 서버 오류(5xx, 429)는 잠시 뒤 다시 시도한다.
+// 오류 메시지에는 주소의 호스트만 넣는다 (쿼리에 인증키가 들어 있다).
+async function fetchRetry(url, options, tries = 3) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(url, options);
+      if (attempt < tries && (res.status >= 500 || res.status === 429)) throw new Error(`HTTP ${res.status}`);
+      return res;
+    } catch (err) {
+      if (attempt >= tries) throw new Error(`${new URL(url).host} 요청 실패: ${err.cause?.code ?? err.message}`);
+      await new Promise((r) => setTimeout(r, attempt * 3000));
+    }
+  }
+}
+
 // ---------- 날짜 ----------
 const todayKst = () => new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 
@@ -111,7 +127,7 @@ async function fetchTourApi(rawKey, today) {
       pageNo: String(pageNo),
       eventStartDate: from,
     });
-    const res = await fetch(`${TOUR_ENDPOINT}?${params}`);
+    const res = await fetchRetry(`${TOUR_ENDPOINT}?${params}`);
     const text = await res.text();
 
     let json;
@@ -195,6 +211,27 @@ export function parseKopisXml(xml) {
   });
 }
 
+// KOPIS 는 짧은 시간에 요청이 몰리면 HTTP 400 "Request Blocked" 로 한동안 막는다 (공식 한도는 미공개).
+// 요청 사이를 띄우고, 막히면 1분 남짓 쉬었다가 간격을 더 벌려 다시 시도한다.
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const kopisPace = { gap: 1000, last: 0 };
+
+async function kopisGet(url) {
+  for (let attempt = 1; ; attempt++) {
+    const wait = kopisPace.last + kopisPace.gap - Date.now();
+    if (wait > 0) await sleep(wait);
+    const res = await fetchRetry(url);
+    kopisPace.last = Date.now();
+    const xml = await res.text();
+    if (res.status !== 400 || !xml.includes('Request Blocked')) return { res, xml };
+
+    if (attempt >= 4) throw new Error('KOPIS 가 요청을 계속 차단합니다 (호출 빈도 제한)');
+    console.warn('KOPIS 호출 빈도 제한에 걸렸습니다. 65초 쉬고 요청 간격을 7초로 늘립니다.');
+    kopisPace.gap = 7000;
+    await sleep(65000);
+  }
+}
+
 async function fetchKopis(key, today) {
   const events = [];
   for (let offset = 0; offset <= LOOKAHEAD_DAYS; offset += KOPIS_WINDOW_DAYS) {
@@ -203,8 +240,7 @@ async function fetchKopis(key, today) {
 
     for (let cpage = 1; cpage <= 300; cpage++) {
       const params = new URLSearchParams({ service: key, stdate, eddate, cpage: String(cpage), rows: String(KOPIS_ROWS) });
-      const res = await fetch(`${KOPIS_ENDPOINT}?${params}`);
-      const xml = await res.text();
+      const { res, xml } = await kopisGet(`${KOPIS_ENDPOINT}?${params}`);
       if (!res.ok) throw new Error(`KOPIS 응답 오류 (HTTP ${res.status}): ${xml.slice(0, 300)}`);
 
       const page = parseKopisXml(xml);
@@ -224,8 +260,7 @@ async function fetchBoxofficeRanks(key, stdate, eddate) {
     stdate: stdate.replaceAll('-', ''),
     eddate: eddate.replaceAll('-', ''),
   });
-  const res = await fetch(`${KOPIS_BOXOFFICE}?${params}`);
-  const xml = await res.text();
+  const { res, xml } = await kopisGet(`${KOPIS_BOXOFFICE}?${params}`);
   if (!res.ok) throw new Error(`KOPIS 예매상황판 응답 오류 (HTTP ${res.status})`);
 
   const code = xmlText(xml, 'returncode');
@@ -323,7 +358,7 @@ async function fetchCulture(rawKey, today) {
       PageNo: String(page),
       numOfrows: String(CULTURE_ROWS),
     });
-    const res = await fetch(`${CULTURE_ENDPOINT}?${params}`);
+    const res = await fetchRetry(`${CULTURE_ENDPOINT}?${params}`);
     const xml = await res.text();
     if (!res.ok) throw new Error(`문화정보 API 응답 오류 (HTTP ${res.status}): ${xml.slice(0, 300)}`);
 
@@ -399,7 +434,7 @@ async function fetchBlogDocs(key, query, today) {
   const docs = [];
   for (let page = 1; page <= BUZZ.pages; page++) {
     const params = new URLSearchParams({ query, sort: 'recency', size: '50', page: String(page) });
-    const res = await fetch(`${KAKAO_BLOG}?${params}`, { headers: { Authorization: `KakaoAK ${key}` } });
+    const res = await fetchRetry(`${KAKAO_BLOG}?${params}`, { headers: { Authorization: `KakaoAK ${key}` } });
     if (!res.ok) throw new Error(`카카오 검색 오류 (HTTP ${res.status}): ${(await res.text()).slice(0, 200)}`);
     const json = await res.json();
     const page_docs = json.documents ?? [];
@@ -540,26 +575,53 @@ async function main() {
     }
     events = [];
 
-    if (tourKey) {
-      const list = await fetchTourApi(tourKey, today);
-      console.log(`TourAPI ${list.length}건`);
+    // 한 곳이 실패해도 나머지는 새로 받고, 실패한 곳은 지난번에 저장한 데이터를 그대로 쓴다.
+    let previous = [];
+    try {
+      const saved = JSON.parse(await readFile(OUT, 'utf8'));
+      if (!saved.sample) previous = saved.events ?? [];
+    } catch {
+      // 처음 실행이면 이전 데이터가 없다.
+    }
+    let fresh = 0;
+    const collect = async (name, source, attribution, fetchList) => {
+      let list;
+      try {
+        list = await fetchList();
+        fresh++;
+      } catch (err) {
+        list = previous.filter((e) => e.source === source);
+        const message = `${name} 수집 실패, 이전 데이터 ${list.length}건 사용: ${err.message}`;
+        console.warn(message);
+        // GitHub Actions 실행 요약에 경고로 남긴다.
+        if (process.env.GITHUB_ACTIONS) console.log(`::warning title=${name} 수집 실패::${message.replace(/\s+/g, ' ')}`);
+      }
       events.push(...list);
-      sources.push({ name: '한국관광공사 TourAPI', url: 'https://api.visitkorea.or.kr' });
+      if (list.length) sources.push(attribution);
+    };
+
+    if (tourKey) {
+      await collect('TourAPI', 'tourapi', { name: '한국관광공사 TourAPI', url: 'https://api.visitkorea.or.kr' }, async () => {
+        const list = await fetchTourApi(tourKey, today);
+        console.log(`TourAPI ${list.length}건`);
+        return list;
+      });
     } else {
       console.warn('TOUR_API_KEY 가 없어 축제·행사 수집을 건너뜁니다.');
     }
 
     if (kopisKey) {
-      const list = await fetchKopis(kopisKey, today);
-      try {
-        const marked = await markHotPerformances(kopisKey, today, list);
-        console.log(`KOPIS ${list.length}건 (예매 순위권 ${marked}건)`);
-      } catch (err) {
-        console.log(`KOPIS ${list.length}건`);
-        console.warn(`인기 공연 표시를 건너뜁니다: ${err.message}`);
-      }
-      events.push(...list);
-      sources.push({ name: '(재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr)', url: 'https://www.kopis.or.kr' });
+      await collect('KOPIS', 'kopis', { name: '(재)예술경영지원센터 공연예술통합전산망(www.kopis.or.kr)', url: 'https://www.kopis.or.kr' }, async () => {
+        const list = await fetchKopis(kopisKey, today);
+        try {
+          const marked = await markHotPerformances(kopisKey, today, list);
+          console.log(`KOPIS ${list.length}건 (예매 순위권 ${marked}건)`);
+        } catch (err) {
+          console.log(`KOPIS ${list.length}건`);
+          console.warn(`인기 공연 표시를 건너뜁니다: ${err.message}`);
+        }
+        return list;
+      });
     } else {
       console.warn('KOPIS_API_KEY 가 없어 공연 수집을 건너뜁니다.');
     }
@@ -567,16 +629,14 @@ async function main() {
     // 공공데이터포털 키는 계정당 하나라 보통 TOUR_API_KEY 와 같다.
     const cultureKey = process.env.CULTURE_API_KEY?.trim() || tourKey;
     if (cultureKey) {
-      try {
+      await collect('문화정보(전시)', 'cultureinfo', { name: '한국문화정보원 문화포털', url: 'https://www.culture.go.kr' }, async () => {
         const list = await fetchCulture(cultureKey, today);
         console.log(`문화정보(전시) ${list.length}건`);
-        events.push(...list);
-        sources.push({ name: '한국문화정보원 문화포털', url: 'https://www.culture.go.kr' });
-      } catch (err) {
-        // 활용신청을 하지 않은 계정에서도 나머지 수집은 계속되도록 한다.
-        console.warn(`전시 수집을 건너뜁니다: ${err.message}`);
-      }
+        return list;
+      });
     }
+
+    if (!fresh) throw new Error('모든 수집이 실패해 기존 파일을 그대로 둡니다.');
 
     const manual = await readManual();
     if (manual.length) {

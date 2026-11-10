@@ -16,10 +16,11 @@ const withinEl = $('within');
 const sortEl = $('sort');
 
 const moreEl = $('more');
+const fromEl = $('range-from');
+const toEl = $('range-to');
 
 const PAGE_SIZE = 60;
-const state = { tab: 'now', theme: 'all', region: 'all', within: 30, sort: 'time', pos: null, limit: PAGE_SIZE };
-let events = [];
+const HORIZON_DAYS = 60; // 수집 스크립트(LOOKAHEAD_DAYS)가 받아 오는 범위
 
 // ---------- 날짜 ----------
 const today = new Date();
@@ -30,6 +31,23 @@ function parseDate(iso) {
   return new Date(y, m - 1, d);
 }
 const diffDays = (a, b) => Math.round((b - a) / 864e5);
+const addDays = (date, n) => new Date(date.getFullYear(), date.getMonth(), date.getDate() + n);
+const toIso = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const lastDay = addDays(today, HORIZON_DAYS);
+
+// weeksAhead 주 뒤의 토~일. 오늘이 일요일이면 이번 주말은 오늘 하루.
+function weekend(weeksAhead) {
+  const day = today.getDay();
+  const saturday = addDays(today, (day === 0 ? -1 : 6 - day) + weeksAhead * 7);
+  return { from: saturday < today ? today : saturday, to: addDays(saturday, 1) };
+}
+
+const state = {
+  tab: 'now', theme: 'all', region: 'all', within: 30, sort: 'time', pos: null, limit: PAGE_SIZE,
+  ...weekend(0), // 날짜 선택 탭의 기간 (from, to)
+};
+let events = [];
+let currentList = []; // 지금 탭·필터에 해당하는 전체 목록 (화면에는 limit 개까지만)
 
 function formatDate(date) {
   const year = date.getFullYear() === today.getFullYear() ? '' : `${date.getFullYear()}.`;
@@ -144,8 +162,10 @@ function render() {
   const filtered = events.filter(matches);
   const now = filtered.filter((ev) => ev.status === 'now');
   const soon = filtered.filter((ev) => ev.status === 'soon' && ev.daysToStart <= state.within);
+  const inRange = filtered.filter((ev) => ev.start <= state.to && ev.end >= state.from);
   $('count-now').textContent = now.length;
   $('count-soon').textContent = soon.length;
+  $('count-range').textContent = inRange.length;
 
   for (const tab of document.querySelectorAll('[data-tab]')) {
     tab.setAttribute('aria-selected', String(tab.dataset.tab === state.tab));
@@ -157,10 +177,13 @@ function render() {
   withinEl.value = String(state.within);
   sortEl.value = state.sort;
   $('within-label').hidden = state.tab !== 'soon';
-  $('sort-time').textContent = state.tab === 'now' ? '끝나는 날 빠른 순' : '시작일 빠른 순';
+  $('range').hidden = state.tab !== 'range';
+  fromEl.value = toIso(state.from);
+  toEl.value = toIso(state.to);
+  $('sort-time').textContent = state.tab === 'soon' ? '시작일 빠른 순' : '끝나는 날 빠른 순';
 
-  const list = state.tab === 'now' ? now : soon;
-  const timeKey = state.tab === 'now' ? 'end' : 'start';
+  const list = { now, soon, range: inRange }[state.tab];
+  const timeKey = state.tab === 'soon' ? 'start' : 'end';
   list.sort((a, b) => {
     if (state.sort === 'near') {
       const diff = (distanceOf(a) ?? Infinity) - (distanceOf(b) ?? Infinity);
@@ -169,19 +192,40 @@ function render() {
     return a[timeKey] - b[timeKey] || a.title.localeCompare(b.title, 'ko');
   });
 
+  currentList = list;
   listEl.replaceChildren(...list.slice(0, state.limit).map(card));
-
-  const rest = list.length - state.limit;
-  moreEl.hidden = rest <= 0;
-  moreEl.textContent = `더 보기 (${rest}곳 남음)`;
+  renderMore();
 
   if (list.length) {
-    statusEl.textContent = `${list.length}곳`;
+    const period = state.from.getTime() === state.to.getTime() ? formatDate(state.from) : `${formatDate(state.from)} – ${formatDate(state.to)}`;
+    statusEl.textContent = state.tab === 'range' ? `${period}에 열리는 곳 ${list.length}곳` : `${list.length}곳`;
   } else {
     const reset = el('button', { type: 'button', class: 'link' }, '필터 초기화');
     reset.addEventListener('click', () => update({ theme: 'all', region: 'all' }));
     statusEl.replaceChildren('조건에 맞는 곳이 없어요. ', state.theme !== 'all' || state.region !== 'all' ? reset : '');
   }
+}
+
+function renderMore() {
+  const rest = currentList.length - state.limit;
+  moreEl.hidden = rest <= 0;
+  moreEl.textContent = `더 보기 (${rest}곳 남음)`;
+}
+
+// 이미 보이는 카드는 그대로 두고 다음 분량만 아래에 붙인다.
+function showMore() {
+  const next = currentList.slice(state.limit, state.limit + PAGE_SIZE);
+  state.limit += PAGE_SIZE;
+  listEl.append(...next.map(card));
+  renderMore();
+}
+
+// 기간은 오늘 ~ 수집 범위 끝 사이로, 시작일이 종료일보다 늦지 않게 맞춘다.
+function setRange(from, to) {
+  const clamp = (d) => (d < today ? today : d > lastDay ? lastDay : d);
+  from = clamp(from);
+  to = clamp(to);
+  update({ from, to: to < from ? from : to });
 }
 
 function update(patch) {
@@ -211,7 +255,25 @@ $('themes').addEventListener('click', (e) => {
   if (chip) update({ theme: chip.dataset.theme });
 });
 
-moreEl.addEventListener('click', () => update({ limit: state.limit + PAGE_SIZE }));
+moreEl.addEventListener('click', showMore);
+
+// 시작일을 종료일 뒤로 옮기면 종료일이 따라가고, 종료일을 시작일 앞으로 옮기면 시작일이 따라간다.
+fromEl.addEventListener('change', () => {
+  if (!fromEl.value) return render();
+  const from = parseDate(fromEl.value);
+  setRange(from, state.to < from ? from : state.to);
+});
+toEl.addEventListener('change', () => {
+  if (!toEl.value) return render();
+  const to = parseDate(toEl.value);
+  setRange(state.from > to ? to : state.from, to);
+});
+$('range-presets').addEventListener('click', (e) => {
+  const preset = e.target.closest('[data-preset]');
+  if (!preset) return;
+  const { from, to } = weekend(Number(preset.dataset.preset));
+  setRange(from, to);
+});
 
 regionEl.addEventListener('change', () => update({ region: regionEl.value }));
 withinEl.addEventListener('change', () => update({ within: Number(withinEl.value) }));
@@ -248,6 +310,10 @@ function restore() {
 async function init() {
   $('today').textContent = `오늘 ${today.getMonth() + 1}월 ${today.getDate()}일 ${WEEKDAYS[today.getDay()]}요일`;
   regionEl.append(el('option', { value: 'all' }, '전국'), ...REGIONS.map((r) => el('option', { value: r }, r)));
+  for (const input of [fromEl, toEl]) {
+    input.min = toIso(today);
+    input.max = toIso(lastDay);
+  }
   restore();
 
   let data;

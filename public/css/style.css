@@ -29,6 +29,9 @@
 
 * { box-sizing: border-box; }
 
+/* display 를 지정한 요소도 hidden 속성으로 확실히 숨긴다 */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   background: var(--bg);
@@ -59,7 +62,8 @@ body {
   padding: 8px 0 10px;
 }
 
-.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px; background: var(--line); border-radius: 12px; }
+.tabs { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 6px; padding: 4px; background: var(--line); border-radius: 12px; }
+.tabs .short { display: none; }
 .tabs button {
   border: 0; border-radius: 9px; padding: 10px 8px; cursor: pointer;
   background: transparent; color: var(--muted); font: inherit; font-weight: 600;
@@ -79,13 +83,17 @@ body {
 }
 .chips button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); font-weight: 600; }
 
+.range { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+.range .chips { margin-left: 4px; }
+
 .selects { display: flex; gap: 6px; flex-wrap: wrap; }
-.selects select {
+.selects select,
+.range input {
   border: 1px solid var(--line); border-radius: 9px; padding: 6px 8px;
   background: var(--surface); color: var(--ink); font: inherit; font-size: 14px;
 }
 
-:is(button, select, a):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+:is(button, select, input, a):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* 목록 */
 .notice {
@@ -147,9 +155,18 @@ body {
 
 @media (max-width: 560px) {
   .top h1 { font-size: 21px; }
+  .tabs { grid-template-columns: 1fr 1fr 1fr; }
   .tabs button { padding: 10px 4px; font-size: 14px; white-space: nowrap; }
+  .tabs .long { display: none; }
+  .tabs .short { display: inline; }
+  .range .chips { margin-left: 0; }
   .grid { grid-template-columns: 1fr; }
   .selects { width: 100%; }
   .selects label { flex: 1; }
   .selects select { width: 100%; }
+}
+
+/* 화면 높이가 낮으면 고정된 필터가 목록과 더 보기 버튼을 가리므로 고정하지 않는다 */
+@media (max-height: 560px) {
+  .controls { position: static; }
 }

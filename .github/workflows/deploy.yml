@@ -31,12 +31,19 @@ jobs:
 
       # 수집에 실패해도 저장소에 들어 있는 기존 데이터로 배포는 계속한다.
       - name: Fetch event data
+        id: fetch
         continue-on-error: true
+        shell: bash # pipefail 이 켜져야 tee 뒤에서도 수집 실패가 실패로 잡힌다
         env:
           TOUR_API_KEY: ${{ secrets.TOUR_API_KEY }}
           KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
           KAKAO_REST_API_KEY: ${{ secrets.KAKAO_REST_API_KEY }}
-        run: node scripts/fetch-events.mjs
+        run: node scripts/fetch-events.mjs 2>&1 | tee fetch.log
+
+      # 실패 이유를 실행 요약의 경고로 남긴다 (옛 데이터로 배포됐다는 표시).
+      - name: Report fetch failure
+        if: steps.fetch.outcome == 'failure'
+        run: echo "::warning title=데이터 수집 실패 - 기존 데이터로 배포::$(tail -n 4 fetch.log | tr '\n' ' ')"
 
       - uses: actions/configure-pages@v5
 

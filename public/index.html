@@ -20,11 +20,24 @@
     <div class="wrap">
       <div class="tabs" role="tablist" aria-label="시기">
         <button type="button" role="tab" data-tab="now" aria-selected="true">
-          지금 가면 좋은 곳 <span class="count" id="count-now"></span>
+          <span class="long">지금 가면 좋은 곳</span><span class="short">지금</span> <span class="count" id="count-now"></span>
         </button>
         <button type="button" role="tab" data-tab="soon" aria-selected="false">
           곧 시작 <span class="count" id="count-soon"></span>
         </button>
+        <button type="button" role="tab" data-tab="range" aria-selected="false">
+          날짜 선택 <span class="count" id="count-range"></span>
+        </button>
+      </div>
+
+      <div class="range" id="range" hidden>
+        <label><span class="sr-only">시작일</span><input type="date" id="range-from"></label>
+        <span aria-hidden="true">~</span>
+        <label><span class="sr-only">종료일</span><input type="date" id="range-to"></label>
+        <div class="chips" id="range-presets">
+          <button type="button" data-preset="0">이번 주말</button>
+          <button type="button" data-preset="1">다음 주말</button>
+        </div>
       </div>
 
       <div class="filters">

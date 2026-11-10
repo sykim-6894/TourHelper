@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-10T06:29:52.422Z",
+ "generatedAt": "2026-11-10T15:41:38.016Z",
  "sample": false,
  "sources": [
   {
@@ -1304,7 +1304,7 @@
    "tel": "051-610-6518",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 92건"
+   "hotLabel": "블로그 87건"
   },
   {
    "id": "tour-4060434",
@@ -2664,7 +2664,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF291533",
    "source": "kopis",
-   "hotLabel": "예매 47위 · 급상승"
+   "hotLabel": "예매 46위 · 급상승"
   },
   {
    "id": "kopis-PF291398",
@@ -3276,7 +3276,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF294946",
    "source": "kopis",
-   "hotLabel": "예매 19위"
+   "hotLabel": "예매 20위"
   },
   {
    "id": "culture-395763",
@@ -3615,7 +3615,7 @@
    "tel": "062-608-4500",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 158+건"
+   "hotLabel": "블로그 151+건"
   },
   {
    "id": "culture-396664",
@@ -3667,7 +3667,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295552",
    "source": "kopis",
-   "hotLabel": "예매 31위"
+   "hotLabel": "예매 32위"
   },
   {
    "id": "kopis-PF297295",
@@ -4384,23 +4384,6 @@
    "source": "kopis"
   },
   {
-   "id": "culture-406023",
-   "title": "[갤러리티] coexistence 공존",
-   "theme": "exhibition",
-   "genre": null,
-   "hot": false,
-   "startDate": "2026-09-30",
-   "endDate": "2026-11-10",
-   "region": "부산",
-   "address": "부산 남구 부산문화재단",
-   "lat": 35.1184588590327,
-   "lng": 129.081356231823,
-   "image": "https://www.culture.go.kr/upload/rdf/26/11/rdf_2026110321172700623.jpg",
-   "tel": null,
-   "link": null,
-   "source": "cultureinfo"
-  },
-  {
    "id": "culture-400595",
    "title": "2026년 다섯 번째 박물관 속 작은 전시_송자대전판",
    "theme": "exhibition",
@@ -4456,7 +4439,7 @@
    "title": "이끼숲",
    "theme": "performance",
    "genre": "뮤지컬",
-   "hot": true,
+   "hot": false,
    "startDate": "2026-10-01",
    "endDate": "2026-12-13",
    "region": "서울",
@@ -4466,8 +4449,7 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF299855_260902_100757.png",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF299855",
-   "source": "kopis",
-   "hotLabel": "예매 27위 · 급상승"
+   "source": "kopis"
   },
   {
    "id": "culture-400553",
@@ -4723,7 +4705,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF299346",
    "source": "kopis",
-   "hotLabel": "예매 21위"
+   "hotLabel": "예매 19위 · 급상승"
   },
   {
    "id": "culture-401336",
@@ -4930,23 +4912,6 @@
    "source": "kopis"
   },
   {
-   "id": "culture-401431",
-   "title": "[우리동네 MG갤러리] 남은정 작가 《남은情-두 시대의 조우》",
-   "theme": "exhibition",
-   "genre": null,
-   "hot": false,
-   "startDate": "2026-10-12",
-   "endDate": "2026-11-10",
-   "region": "강원",
-   "address": "강원 삼척시 MG삼척중앙새마을금고 우리동네 MG갤러리",
-   "lat": 37.4426783387034,
-   "lng": 129.164628771706,
-   "image": "https://www.culture.go.kr/upload/ucms/oneCltInfo/2026/202610/8e8e57d7a76f480596672eb2102873df.jpg",
-   "tel": null,
-   "link": null,
-   "source": "cultureinfo"
-  },
-  {
    "id": "culture-402286",
    "title": "2026 신진 청년작가 지원사업 <사이>",
    "theme": "exhibition",
@@ -5103,7 +5068,7 @@
    "title": "수레바퀴 아래서 [대학로]",
    "theme": "performance",
    "genre": "뮤지컬",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-10-13",
    "endDate": "2027-01-03",
    "region": "서울",
@@ -5113,7 +5078,8 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300598_260910_131601.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300598",
-   "source": "kopis"
+   "source": "kopis",
+   "hotLabel": "예매 49위 · 급상승"
   },
   {
    "id": "kopis-PF300586",
@@ -5553,13 +5519,13 @@
    "tel": "1644-6155",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 74건 · 급상승"
+   "hotLabel": "블로그 77건 · 급상승"
   },
   {
    "id": "tour-3468240",
    "title": "전라관찰사의 탄생",
    "theme": "festival",
-   "hot": true,
+   "hot": false,
    "startDate": "2026-10-18",
    "endDate": "2026-11-29",
    "region": "전북",
@@ -5569,8 +5535,7 @@
    "image": "https://tong.visitkorea.or.kr/cms/resource/62/4123062_image2_1.jpg",
    "tel": "063-232-9938",
    "link": null,
-   "source": "tourapi",
-   "hotLabel": "블로그 21건 · 급상승"
+   "source": "tourapi"
   },
   {
    "id": "culture-401394",
@@ -5858,7 +5823,7 @@
    "tel": "070-5226-0759",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 127건"
+   "hotLabel": "블로그 116건"
   },
   {
    "id": "kopis-PF301098",
@@ -6267,23 +6232,6 @@
    "source": "cultureinfo"
   },
   {
-   "id": "kopis-PF304623",
-   "title": "리바이벌 (REVIVER)",
-   "theme": "performance",
-   "genre": "연극",
-   "hot": false,
-   "startDate": "2026-10-28",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "로드 유미플레이 2",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304623_261030_095257.png",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304623",
-   "source": "kopis"
-  },
-  {
    "id": "kopis-PF300582",
    "title": "보물찾기 [울산]",
    "theme": "performance",
@@ -6485,7 +6433,7 @@
    "tel": "02-6678-9000",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 498+건"
+   "hotLabel": "블로그 499+건"
   },
   {
    "id": "kopis-PF301593",
@@ -6776,6 +6724,23 @@
    "source": "kopis"
   },
   {
+   "id": "culture-407639",
+   "title": "WHERE THE SOULS LINGER",
+   "theme": "exhibition",
+   "genre": null,
+   "hot": false,
+   "startDate": "2026-11-01",
+   "endDate": "2026-11-15",
+   "region": "서울",
+   "address": "서울 종로구 갤러리 자인제노",
+   "lat": 37.5796332801339,
+   "lng": 126.972136086372,
+   "image": "https://www.culture.go.kr/upload/rdf/26/11/show_2026111021172145972.jpg",
+   "tel": null,
+   "link": null,
+   "source": "cultureinfo"
+  },
+  {
    "id": "culture-406240",
    "title": "[원주전통문화교육원] 천년의 탑, 민화로 여는 새로운 천년",
    "theme": "exhibition",
@@ -7029,7 +6994,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301565",
    "source": "kopis",
-   "hotLabel": "예매 42위 · 급상승"
+   "hotLabel": "예매 36위 · 급상승"
   },
   {
    "id": "culture-407427",
@@ -7287,23 +7252,6 @@
    "source": "cultureinfo"
   },
   {
-   "id": "culture-405963",
-   "title": "[청주 갤러리 원] A관 B관 이화SUN민화 세 번째 회원전",
-   "theme": "exhibition",
-   "genre": null,
-   "hot": false,
-   "startDate": "2026-11-05",
-   "endDate": "2026-11-10",
-   "region": "충북",
-   "address": "충북 청주시 CGV청주(서문) 갤러리원 1층",
-   "lat": 36.63508289706297,
-   "lng": 127.4869596346555,
-   "image": "https://www.culture.go.kr/upload/ucms/oneCltInfo/2026/202611/f858b9dce38442bc9c950bbbb4b96ff4.jpg",
-   "tel": null,
-   "link": null,
-   "source": "cultureinfo"
-  },
-  {
    "id": "culture-405558",
    "title": "2026 대전테미예술창작센터 13기 입주예술가 프로젝트 결과보고전",
    "theme": "exhibition",
@@ -7418,23 +7366,6 @@
    "lat": 35.2317441913605,
    "lng": 129.086475607924,
    "image": "https://www.culture.go.kr/upload/ucms/oneCltInfo/2026/202611/8cbd5feef17a438691bc230ceb43889e.jpg",
-   "tel": null,
-   "link": null,
-   "source": "cultureinfo"
-  },
-  {
-   "id": "culture-406338",
-   "title": "상묵회 <천안문화예술컨퍼런스>",
-   "theme": "exhibition",
-   "genre": null,
-   "hot": false,
-   "startDate": "2026-11-05",
-   "endDate": "2026-11-10",
-   "region": "충남",
-   "address": "충남 천안시 천안예술의전당",
-   "lat": 36.75606837695557,
-   "lng": 127.2254122710195,
-   "image": "https://www.culture.go.kr/upload/ucms/oneCltInfo/2026/202611/2d77906808034b80847772e61fb94648.png",
    "tel": null,
    "link": null,
    "source": "cultureinfo"
@@ -7627,23 +7558,6 @@
    "source": "cultureinfo"
   },
   {
-   "id": "tour-4114621",
-   "title": "2026 대한민국 제주정원문화박람회",
-   "theme": "festival",
-   "hot": true,
-   "startDate": "2026-11-06",
-   "endDate": "2026-11-10",
-   "region": "제주",
-   "address": "제주특별자치도 서귀포시 서호남로 19-30 (서호동)",
-   "lat": 33.2525461361,
-   "lng": 126.5161895225,
-   "image": "https://tong.visitkorea.or.kr/cms/resource/35/4114835_image2_1.png",
-   "tel": "043-212-7893",
-   "link": null,
-   "source": "tourapi",
-   "hotLabel": "블로그 94건 · 급상승"
-  },
-  {
    "id": "kopis-PF302412",
    "title": "굿프렌즈 [대구]",
    "theme": "performance",
@@ -7659,23 +7573,6 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302412",
    "source": "kopis"
-  },
-  {
-   "id": "tour-506470",
-   "title": "김해분청도자기축제",
-   "theme": "festival",
-   "hot": true,
-   "startDate": "2026-11-06",
-   "endDate": "2026-11-10",
-   "region": "경남",
-   "address": "경상남도 김해시 장유로 551 (신문동) 롯데가든파크",
-   "lat": 35.183247103,
-   "lng": 128.8287850953,
-   "image": "https://tong.visitkorea.or.kr/cms/resource/49/3546549_image2_1.jpg",
-   "tel": "055-330-3244",
-   "link": null,
-   "source": "tourapi",
-   "hotLabel": "블로그 318+건"
   },
   {
    "id": "culture-405272",
@@ -7795,6 +7692,23 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302727",
    "source": "kopis"
+  },
+  {
+   "id": "culture-407638",
+   "title": "추측의 시간들",
+   "theme": "exhibition",
+   "genre": null,
+   "hot": false,
+   "startDate": "2026-11-06",
+   "endDate": "2026-11-20",
+   "region": "서울",
+   "address": "서울 종로구 두루아트스페이스",
+   "lat": 37.5989391143112,
+   "lng": 126.959396386305,
+   "image": "https://www.culture.go.kr/upload/rdf/26/11/show_2026111021172158246.jpg",
+   "tel": null,
+   "link": null,
+   "source": "cultureinfo"
   },
   {
    "id": "kopis-PF304452",
@@ -8289,23 +8203,6 @@
    "source": "cultureinfo"
   },
   {
-   "id": "kopis-PF303248",
-   "title": "강초롱 플루트 독주회",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "예술의전당 [서울]",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303248_261013_163903.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303248",
-   "source": "kopis"
-  },
-  {
    "id": "culture-403447",
    "title": "開人展",
    "theme": "exhibition",
@@ -8391,23 +8288,6 @@
    "source": "kopis"
   },
   {
-   "id": "kopis-PF302457",
-   "title": "누구나 클래식 with 대전시립교향악단 (11월)",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "세종문화회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302457_261006_104956.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302457",
-   "source": "kopis"
-  },
-  {
    "id": "culture-406378",
    "title": "능동형 창작주체 현장연계 프로젝트 《인간이라는 미지의 생물》",
    "theme": "exhibition",
@@ -8423,91 +8303,6 @@
    "tel": null,
    "link": null,
    "source": "cultureinfo"
-  },
-  {
-   "id": "kopis-PF303729",
-   "title": "대전세계예술가곡 페스티벌, Die Schonemullerin 아름다운 물방앗간의 아가씨",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대전",
-   "address": "대전시립연정국악원",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303729_261019_132411.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303729",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF298862",
-   "title": "디 오리지널 시리즈, 임동혁 X 오케스트라 디 오리지널, 리부트: 라흐마니노프",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "예술의전당 [서울]",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF298862_260819_141052.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF298862",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304601",
-   "title": "라라라온 [스페이스 한강]",
-   "theme": "performance",
-   "genre": "대중음악",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "스페이스한강",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304601_261027_141501.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304601",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF285341",
-   "title": "렉처 콘서트 Ⅳ. 미국 음악의 탄생 [공주]",
-   "theme": "performance",
-   "genre": "대중음악",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "충남",
-   "address": "공주문예회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF285341_260219_141836.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF285341",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF302691",
-   "title": "리트플레이 겨울나그네 렉처 콘서트 (베스티클럽)",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "강동아트센터",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302691_261007_130248.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302691",
-   "source": "kopis"
   },
   {
    "id": "kopis-PF303399",
@@ -8544,57 +8339,6 @@
    "source": "kopis"
   },
   {
-   "id": "kopis-PF304085",
-   "title": "바로크 실내악의 정령: 파비오 비온디와 에우로파 갈란테의 사계 [부산]",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "부산",
-   "address": "부산콘서트홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304085_261021_165815.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304085",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303316",
-   "title": "바리톤 고성현이 부르는 김연준 가곡 콘서트: 시인의 사랑과 생애 [대구]",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대구",
-   "address": "어울아트센터(구. 대구북구문예회관)",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303316_261014_142459.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303316",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF305564",
-   "title": "베리타스 뮤지케 음악제, TVT와의 국제교류 작품발표회",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "일신홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305564_261105_134340.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305564",
-   "source": "kopis"
-  },
-  {
    "id": "kopis-PF301005",
    "title": "사과가 쿵! [부천]",
    "theme": "performance",
@@ -8609,23 +8353,6 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301005_260915_145505.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301005",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303378",
-   "title": "서울바흐축제, 칸타타 시리즈",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "예술의전당 [서울]",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303378_261014_175831.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303378",
    "source": "kopis"
   },
   {
@@ -8646,40 +8373,6 @@
    "source": "kopis"
   },
   {
-   "id": "kopis-PF293997",
-   "title": "아침을 여는 클래식, 피아니스트 안종도 [대전] (11월)",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대전",
-   "address": "대전예술의전당",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF293997_260617_164241.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF293997",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303916",
-   "title": "연주자를 만나다 Ⅸ, 테너 임권묵: 내 영혼의 솔레미오 [대전]",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대전",
-   "address": "복합문화공간 플랜에이",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303916_261020_150139.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303916",
-   "source": "kopis"
-  },
-  {
    "id": "kopis-PF305119",
    "title": "연출가 故김태수 1주기 추모연극제, 금관의 예수",
    "theme": "performance",
@@ -8697,74 +8390,6 @@
    "source": "kopis"
   },
   {
-   "id": "kopis-PF302876",
-   "title": "영 프라미스 아티스트, 양진우 첼로 리사이틀 [부산]",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "부산",
-   "address": "낙동아트센터",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302876_261012_110016.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302876",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303141",
-   "title": "와락심포니 정기연주회: 여성, 청춘을 품다 [부산]",
-   "theme": "performance",
-   "genre": "한국음악(국악)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "부산",
-   "address": "낙동아트센터",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303141_261013_111145.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303141",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF302907",
-   "title": "울산시립합창단 기획연주회: 한국가곡 토크콘서트",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "울산",
-   "address": "울산문화예술회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302907_261012_124443.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302907",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304586",
-   "title": "음악감독 송경하와 함께하는 이탈리아 바닷가 도시 음악 여행",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "인천",
-   "address": "아트센터 인천",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304586_261027_134126.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304586",
-   "source": "kopis"
-  },
-  {
    "id": "kopis-PF303133",
    "title": "인트라 무로스 (INTRA MUROS)",
    "theme": "performance",
@@ -8779,74 +8404,6 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303133_261013_105306.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303133",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304820",
-   "title": "정선군 고창군 상호결연 2주년 기념공연: 1872 고창히어로 [정선]",
-   "theme": "performance",
-   "genre": "한국음악(국악)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "강원",
-   "address": "정선아리랑센터",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304820_261029_131355.png",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304820",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304536",
-   "title": "제10회 대전 어린이 연극축제, 춤추는 도깨비",
-   "theme": "performance",
-   "genre": "연극",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대전",
-   "address": "작은극장 다함",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304536_261026_173831.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304536",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303811",
-   "title": "제12회 경남페스티벌앙상블 정기연주회: 맥박 [창원]",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "경남",
-   "address": "성산아트홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303811_261019_160031.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303811",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304887",
-   "title": "제21회 예인교수앙상블 정기연주회",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "영산아트홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304887_261030_105516.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304887",
    "source": "kopis"
   },
   {
@@ -8901,74 +8458,6 @@
    "source": "kopis"
   },
   {
-   "id": "kopis-PF304904",
-   "title": "제26회 월드 2인극 페스티벌: 때, 사랑할",
-   "theme": "performance",
-   "genre": "연극",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "광복극장",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304904_261105_175235.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304904",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304022",
-   "title": "제26회 월드 2인극페스티벌, 나는 아직 그곳에",
-   "theme": "performance",
-   "genre": "연극",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "광복극장",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304022_261021_140211.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304022",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304626",
-   "title": "제26회 월드 2인극페스티벌, 파수꾼",
-   "theme": "performance",
-   "genre": "연극",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "광복극장",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304626_261027_155036.png",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304626",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF305489",
-   "title": "제27회 중구구립합창단 정기 연주회",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "충무아트센터",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305489_261104_152156.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305489",
-   "source": "kopis"
-  },
-  {
    "id": "kopis-PF305986",
    "title": "제34회 전북 소극장 연극제, 시암골 사람들 [전주]",
    "theme": "performance",
@@ -8983,40 +8472,6 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305986_261110_142613.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305986",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303362",
-   "title": "제37회 여음목관5중주 정기연주회",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "예술의전당 [서울]",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303362_261014_165510.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303362",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF305698",
-   "title": "제6회 드로잉더뮤직 음악콩쿠르 대상전",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "거암아트홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305698_261109_103913.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305698",
    "source": "kopis"
   },
   {
@@ -9037,91 +8492,6 @@
    "source": "kopis"
   },
   {
-   "id": "kopis-PF305138",
-   "title": "제7회 김정림 구민희 피아노 듀오 콘서트",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "금호아트홀 연세",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305138_261102_155949.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305138",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF301176",
-   "title": "제7회 블루밍 트리오 정기연주회",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "세종문화회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301176_260917_113646.png",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301176",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303836",
-   "title": "제8회 스케치 정기연주회: 온 더 레드카펫 [대구] (11.10)",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대구",
-   "address": "비원뮤직홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303836_261019_172502.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303836",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303779",
-   "title": "제98회 예술공감, 빈체로오페라콰이어가 부르는 부산",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "부산",
-   "address": "을숙도문화회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303779_261019_150859.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303779",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304098",
-   "title": "조선혼인프로젝트: 김신부부뎐 [청양]",
-   "theme": "performance",
-   "genre": "한국음악(국악)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "충남",
-   "address": "청양문예회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304098_261022_101807.png",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304098",
-   "source": "kopis"
-  },
-  {
    "id": "kopis-PF302723",
    "title": "지금 정리할게요 [대학로]",
    "theme": "performance",
@@ -9136,23 +8506,6 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302723_261007_140328.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302723",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF295323",
-   "title": "클래식 온: 소프라노 강혜정 리사이틀 [대구]",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대구",
-   "address": "대구콘서트하우스",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF295323_261104_165546.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF295323",
    "source": "kopis"
   },
   {
@@ -9187,125 +8540,6 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305980_261110_141058.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305980",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF302934",
-   "title": "포항국제음악제, 아티스트 포항 Ⅱ. 문성우",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "경북",
-   "address": "포항문화예술회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302934_261012_133509.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302934",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF300322",
-   "title": "포항국제음악제, 포항시립교향악단 with 김영욱 & 율리안 슈테켈",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "경북",
-   "address": "포항문화예술회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF300322_260907_154644.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300322",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303986",
-   "title": "해설이 있는 음악회 서.클.스, 티치아노 베첼리오 (11월)",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "울산",
-   "address": "서울주문화센터",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303986_261021_124719.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303986",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF304782",
-   "title": "헤어드레서 [장성]",
-   "theme": "performance",
-   "genre": "뮤지컬",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "전남",
-   "address": "장성문화예술회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304782_261029_103514.png",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304782",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF303938",
-   "title": "화요국악무대, Beyond K-GUGAK [대구]",
-   "theme": "performance",
-   "genre": "한국음악(국악)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "대구",
-   "address": "대구문화예술회관",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303938_261020_172106.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303938",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF299347",
-   "title": "SAC ON SCREEN, 보컬 마스터 시리즈 Ⅲ. 베이스 바리톤 사무엘 윤 [화성] (영상화)",
-   "theme": "performance",
-   "genre": "서양음악(클래식)",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "경기",
-   "address": "화성예술의전당",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF299347_260825_140634.gif",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF299347",
-   "source": "kopis"
-  },
-  {
-   "id": "kopis-PF302792",
-   "title": "Sounds of Autumn",
-   "theme": "performance",
-   "genre": "뮤지컬",
-   "hot": false,
-   "startDate": "2026-11-10",
-   "endDate": "2026-11-10",
-   "region": "서울",
-   "address": "롯데콘서트홀",
-   "lat": null,
-   "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302792_261008_112216.jpg",
-   "tel": null,
-   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302792",
    "source": "kopis"
   },
   {
@@ -9460,7 +8694,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300974",
    "source": "kopis",
-   "hotLabel": "예매 40위 · 급상승"
+   "hotLabel": "예매 43위 · 급상승"
   },
   {
    "id": "kopis-PF304599",
@@ -11007,7 +10241,7 @@
    "tel": "062-413-1271",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 36건 · 급상승"
+   "hotLabel": "블로그 42건 · 급상승"
   },
   {
    "id": "kopis-PF302867",
@@ -11721,7 +10955,7 @@
    "tel": "02-6952-9498",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 142건 · 급상승"
+   "hotLabel": "블로그 164건 · 급상승"
   },
   {
    "id": "kopis-PF299711",
@@ -11892,23 +11126,6 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305171",
    "source": "kopis"
-  },
-  {
-   "id": "tour-2995190",
-   "title": "누들대전축제",
-   "theme": "festival",
-   "hot": true,
-   "startDate": "2026-11-13",
-   "endDate": "2026-11-15",
-   "region": "대전",
-   "address": "대전광역시 중구 계룡로904번길 30 (문화동) 대전 한빛탑광장",
-   "lat": 36.3209285835,
-   "lng": 127.4119234684,
-   "image": "https://tong.visitkorea.or.kr/cms/resource/35/4138635_image2_1.jpg",
-   "tel": "042-251-3801",
-   "link": null,
-   "source": "tourapi",
-   "hotLabel": "블로그 201건 · 급상승"
   },
   {
    "id": "kopis-PF304418",
@@ -12543,7 +11760,7 @@
    "id": "tour-2613615",
    "title": "영주 사과축제",
    "theme": "festival",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-11-13",
    "endDate": "2026-11-15",
    "region": "서울",
@@ -12553,7 +11770,8 @@
    "image": "https://tong.visitkorea.or.kr/cms/resource/79/4139579_image2_1.jpg",
    "tel": "054-630-8706",
    "link": null,
-   "source": "tourapi"
+   "source": "tourapi",
+   "hotLabel": "블로그 100건 · 급상승"
   },
   {
    "id": "kopis-PF301877",
@@ -13512,7 +12730,7 @@
    "title": "TOMORROW X TOGETHER WORLD TOUR: STEAL THE WIND [서울]",
    "theme": "performance",
    "genre": "대중음악",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-11-13",
    "endDate": "2026-11-15",
    "region": "서울",
@@ -13522,7 +12740,8 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302337_261002_130537.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302337",
-   "source": "kopis"
+   "source": "kopis",
+   "hotLabel": "예매 48위 · 급상승"
   },
   {
    "id": "kopis-PF303455",
@@ -13596,7 +12815,7 @@
    "id": "tour-4137577",
    "title": "2026 국민건강 리부트 마음건강 걷기대회",
    "theme": "festival",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-11-14",
    "endDate": "2026-11-14",
    "region": "세종",
@@ -13606,7 +12825,8 @@
    "image": "https://tong.visitkorea.or.kr/cms/resource/78/4137578_image2_1.jpg",
    "tel": "044-251-7113",
    "link": null,
-   "source": "tourapi"
+   "source": "tourapi",
+   "hotLabel": "블로그 20건 · 급상승"
   },
   {
    "id": "tour-4113301",
@@ -13639,7 +12859,7 @@
    "tel": "041-540-2428",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 76건 · 급상승"
+   "hotLabel": "블로그 86건 · 급상승"
   },
   {
    "id": "kopis-PF304120",
@@ -15011,7 +14231,7 @@
    "address": "대구문화예술회관",
    "lat": null,
    "lng": null,
-   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302127_260930_140259.gif",
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF302127_261110_170057.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302127",
    "source": "kopis"
@@ -16187,7 +15407,7 @@
    "tel": "063-433-6613",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 78건 · 급상승"
+   "hotLabel": "블로그 84건 · 급상승"
   },
   {
    "id": "kopis-PF301606",
@@ -21316,7 +20536,7 @@
    "tel": "054-289-7852~6",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 298+건"
+   "hotLabel": "블로그 290+건"
   },
   {
    "id": "kopis-PF305716",
@@ -21483,6 +20703,22 @@
    "lng": 126.700028637,
    "image": "https://tong.visitkorea.or.kr/cms/resource/00/4118300_image2_1.jpg",
    "tel": "070-4895-0879",
+   "link": null,
+   "source": "tourapi"
+  },
+  {
+   "id": "tour-4151221",
+   "title": "2026 제1회 강원 도시재생 집수리의 날",
+   "theme": "festival",
+   "hot": false,
+   "startDate": "2026-11-20",
+   "endDate": "2026-11-21",
+   "region": "강원",
+   "address": "강원특별자치도 원주시 남산로218번길 7 (학성동)",
+   "lat": 37.3548373317,
+   "lng": 127.9437145394,
+   "image": "https://tong.visitkorea.or.kr/cms/resource/22/4151222_image2_1.jpg",
+   "tel": "033-250-2987",
    "link": null,
    "source": "tourapi"
   },
@@ -23438,6 +22674,22 @@
    "source": "tourapi"
   },
   {
+   "id": "tour-3315407",
+   "title": "2026 제4차 제물포웨이브마켓",
+   "theme": "festival",
+   "hot": false,
+   "startDate": "2026-11-21",
+   "endDate": "2026-11-22",
+   "region": "인천",
+   "address": "인천광역시 제물포구 월미로 33 (북성동1가)",
+   "lat": 37.4760834131,
+   "lng": 126.6146527143,
+   "image": "https://tong.visitkorea.or.kr/cms/resource/10/4151210_image2_1.jpg",
+   "tel": "010-9265-3796",
+   "link": null,
+   "source": "tourapi"
+  },
+  {
    "id": "kopis-PF303540",
    "title": "가야금앙상블 그미, 인천네컷: 도시를 노래하다",
    "theme": "performance",
@@ -24709,7 +23961,7 @@
    "tel": "063-653-1827",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 88건"
+   "hotLabel": "블로그 89건"
   },
   {
    "id": "kopis-PF304855",
@@ -25084,6 +24336,22 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304109",
    "source": "kopis"
+  },
+  {
+   "id": "tour-4151224",
+   "title": "역사랑께 배우랑께",
+   "theme": "festival",
+   "hot": false,
+   "startDate": "2026-11-21",
+   "endDate": "2026-11-21",
+   "region": "전북",
+   "address": "전북특별자치도 전주시 완산구 전라감영로 55 (중앙동4가)",
+   "lat": 35.8165952746,
+   "lng": 127.1458864053,
+   "image": "https://tong.visitkorea.or.kr/cms/resource/25/4151225_image2_1.jpg",
+   "tel": "063-232-9938",
+   "link": null,
+   "source": "tourapi"
   },
   {
    "id": "kopis-PF305022",
@@ -28399,7 +27667,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302516",
    "source": "kopis",
-   "hotLabel": "예매 9위"
+   "hotLabel": "예매 7위"
   },
   {
    "id": "kopis-PF304341",
@@ -29318,7 +28586,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF300132",
    "source": "kopis",
-   "hotLabel": "예매 33위 · 급상승"
+   "hotLabel": "예매 30위 · 급상승"
   },
   {
    "id": "kopis-PF304872",
@@ -30540,7 +29808,7 @@
    "tel": "070-4680-1718",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 206건"
+   "hotLabel": "블로그 221건"
   },
   {
    "id": "kopis-PF305066",
@@ -30557,6 +29825,23 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305066_261102_133148.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305066",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF306008",
+   "title": "타조소년들 [대학로]",
+   "theme": "performance",
+   "genre": "연극",
+   "hot": false,
+   "startDate": "2026-11-26",
+   "endDate": "2026-11-29",
+   "region": "서울",
+   "address": "보라 아트홀(구. 지구인아트홀)",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF306008_261110_152433.jpg",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306008",
    "source": "kopis"
   },
   {
@@ -33566,7 +32851,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305520",
    "source": "kopis",
-   "hotLabel": "예매 7위 · 급상승"
+   "hotLabel": "예매 5위 · 급상승"
   },
   {
    "id": "kopis-PF295444",
@@ -33856,7 +33141,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF293285",
    "source": "kopis",
-   "hotLabel": "예매 28위 · 급상승"
+   "hotLabel": "예매 29위"
   },
   {
    "id": "kopis-PF303888",
@@ -35474,6 +34759,23 @@
    "source": "kopis"
   },
   {
+   "id": "kopis-PF306013",
+   "title": "해설이 있는 발레, 호두까기 인형 [정읍]",
+   "theme": "performance",
+   "genre": "무용(서양/한국무용)",
+   "hot": false,
+   "startDate": "2026-11-29",
+   "endDate": "2026-11-29",
+   "region": "전북",
+   "address": "정읍사예술회관",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF306013_261110_153926.png",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306013",
+   "source": "kopis"
+  },
+  {
    "id": "kopis-PF300753",
    "title": "호두까기 인형 [서울 강남]",
    "theme": "performance",
@@ -35880,7 +35182,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305670",
    "source": "kopis",
-   "hotLabel": "예매 14위 · 급상승"
+   "hotLabel": "예매 9위 · 급상승"
   },
   {
    "id": "kopis-PF305111",
@@ -36272,7 +35574,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF282162",
    "source": "kopis",
-   "hotLabel": "예매 18위 · 급상승"
+   "hotLabel": "예매 16위 · 급상승"
   },
   {
    "id": "kopis-PF303674",
@@ -36732,7 +36034,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302677",
    "source": "kopis",
-   "hotLabel": "예매 13위"
+   "hotLabel": "예매 10위"
   },
   {
    "id": "kopis-PF305800",
@@ -36971,7 +36273,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305658",
    "source": "kopis",
-   "hotLabel": "예매 15위 · 급상승"
+   "hotLabel": "예매 12위 · 급상승"
   },
   {
    "id": "kopis-PF305247",
@@ -37652,7 +36954,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303043",
    "source": "kopis",
-   "hotLabel": "예매 2위 · 급상승"
+   "hotLabel": "예매 11위"
   },
   {
    "id": "kopis-PF304115",
@@ -37737,7 +37039,7 @@
    "tel": "010-2258-9475",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 41건 · 급상승"
+   "hotLabel": "블로그 44건 · 급상승"
   },
   {
    "id": "kopis-PF304905",
@@ -37840,7 +37142,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF297746",
    "source": "kopis",
-   "hotLabel": "예매 23위"
+   "hotLabel": "예매 25위"
   },
   {
    "id": "kopis-PF305763",
@@ -40357,7 +39659,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305648",
    "source": "kopis",
-   "hotLabel": "예매 22위 · 급상승"
+   "hotLabel": "예매 17위 · 급상승"
   },
   {
    "id": "kopis-PF300334",
@@ -41547,7 +40849,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305728",
    "source": "kopis",
-   "hotLabel": "예매 26위 · 급상승"
+   "hotLabel": "예매 22위 · 급상승"
   },
   {
    "id": "kopis-PF303317",
@@ -41990,7 +41292,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305507",
    "source": "kopis",
-   "hotLabel": "예매 24위 · 급상승"
+   "hotLabel": "예매 21위 · 급상승"
   },
   {
    "id": "kopis-PF302979",
@@ -42517,7 +41819,7 @@
    "tel": "02-3788-8105",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 173+건"
+   "hotLabel": "블로그 203+건"
   },
   {
    "id": "kopis-PF296001",
@@ -42823,7 +42125,7 @@
    "tel": "02-3788-8168",
    "link": null,
    "source": "tourapi",
-   "hotLabel": "블로그 201건 · 급상승"
+   "hotLabel": "블로그 234건 · 급상승"
   },
   {
    "id": "kopis-PF300832",
@@ -43164,7 +42466,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305278",
    "source": "kopis",
-   "hotLabel": "예매 30위"
+   "hotLabel": "예매 27위"
   },
   {
    "id": "kopis-PF305779",
@@ -43283,6 +42585,23 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF294408_260623_112740.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF294408",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF306009",
+   "title": "공연단체ON 4번째 프로젝트, 이솝이야기",
+   "theme": "performance",
+   "genre": "뮤지컬",
+   "hot": false,
+   "startDate": "2026-12-12",
+   "endDate": "2026-12-13",
+   "region": "서울",
+   "address": "북촌창우극장",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF306009_261110_152433.gif",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306009",
    "source": "kopis"
   },
   {
@@ -44083,7 +43402,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305850",
    "source": "kopis",
-   "hotLabel": "예매 29위 · 급상승"
+   "hotLabel": "예매 26위 · 급상승"
   },
   {
    "id": "kopis-PF294327",
@@ -44441,7 +43760,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301534",
    "source": "kopis",
-   "hotLabel": "예매 36위 · 급상승"
+   "hotLabel": "예매 37위 · 급상승"
   },
   {
    "id": "kopis-PF302511",
@@ -44816,7 +44135,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF302745",
    "source": "kopis",
-   "hotLabel": "예매 38위 · 급상승"
+   "hotLabel": "예매 33위 · 급상승"
   },
   {
    "id": "kopis-PF302901",
@@ -45599,7 +44918,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305899",
    "source": "kopis",
-   "hotLabel": "예매 17위 · 급상승"
+   "hotLabel": "예매 14위 · 급상승"
   },
   {
    "id": "kopis-PF305849",
@@ -45973,6 +45292,23 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304165_261022_132509.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304165",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF306011",
+   "title": "고양월드클래식, 콘서트 오페라: 비제 카르멘 [고양]",
+   "theme": "performance",
+   "genre": "서양음악(클래식)",
+   "hot": false,
+   "startDate": "2026-12-16",
+   "endDate": "2026-12-16",
+   "region": "경기",
+   "address": "고양아람누리",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF306011_261110_153220.jpeg",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306011",
    "source": "kopis"
   },
   {
@@ -46500,7 +45836,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303402",
    "source": "kopis",
-   "hotLabel": "예매 12위"
+   "hotLabel": "예매 8위"
   },
   {
    "id": "kopis-PF296273",
@@ -46926,7 +46262,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303493",
    "source": "kopis",
-   "hotLabel": "예매 43위 · 급상승"
+   "hotLabel": "예매 39위 · 급상승"
   },
   {
    "id": "kopis-PF281668",
@@ -47063,7 +46399,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301152",
    "source": "kopis",
-   "hotLabel": "예매 34위"
+   "hotLabel": "예매 38위"
   },
   {
    "id": "kopis-PF303987",
@@ -47233,6 +46569,23 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301272_260918_112845.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301272",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF306007",
+   "title": "겨울왕국 [충주]",
+   "theme": "performance",
+   "genre": "뮤지컬",
+   "hot": false,
+   "startDate": "2026-12-19",
+   "endDate": "2026-12-19",
+   "region": "충북",
+   "address": "충주시문화회관",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF306007_261110_152000.jpg",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306007",
    "source": "kopis"
   },
   {
@@ -49025,7 +48378,7 @@
    "title": "NIGHT HIKE TOURS [서울]",
    "theme": "performance",
    "genre": "대중음악",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-12-19",
    "endDate": "2026-12-19",
    "region": "서울",
@@ -49035,7 +48388,8 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305784_261109_140504.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305784",
-   "source": "kopis"
+   "source": "kopis",
+   "hotLabel": "예매 47위 · 급상승"
   },
   {
    "id": "kopis-PF303755",
@@ -49059,7 +48413,7 @@
    "title": "THE PLAYER Season 4, HYNN (박혜원) : White Night [김해]",
    "theme": "performance",
    "genre": "대중음악",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-12-19",
    "endDate": "2026-12-19",
    "region": "경남",
@@ -49069,7 +48423,8 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305521_261105_110352.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305521",
-   "source": "kopis"
+   "source": "kopis",
+   "hotLabel": "예매 50위 · 급상승"
   },
   {
    "id": "kopis-PF300795",
@@ -50466,6 +49821,24 @@
    "source": "kopis"
   },
   {
+   "id": "kopis-PF305999",
+   "title": "얼음나무 숲 [대학로]",
+   "theme": "performance",
+   "genre": "뮤지컬",
+   "hot": true,
+   "startDate": "2026-12-23",
+   "endDate": "2027-03-14",
+   "region": "서울",
+   "address": "동덕여대공연예술센터",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305999_261110_150237.jpg",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305999",
+   "source": "kopis",
+   "hotLabel": "예매 24위 · 급상승"
+  },
+  {
    "id": "kopis-PF280816",
    "title": "제342회 부천필하모닉오케스트라 정기연주회: 베토벤, 합창",
    "theme": "performance",
@@ -50583,7 +49956,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305498",
    "source": "kopis",
-   "hotLabel": "예매 32위 · 급상승"
+   "hotLabel": "예매 28위 · 급상승"
   },
   {
    "id": "kopis-PF305393",
@@ -51094,7 +50467,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305844",
    "source": "kopis",
-   "hotLabel": "예매 39위 · 급상승"
+   "hotLabel": "예매 34위 · 급상승"
   },
   {
    "id": "kopis-PF303645",
@@ -51214,7 +50587,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305572",
    "source": "kopis",
-   "hotLabel": "예매 35위 · 급상승"
+   "hotLabel": "예매 31위 · 급상승"
   },
   {
    "id": "kopis-PF296045",
@@ -51266,7 +50639,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305548",
    "source": "kopis",
-   "hotLabel": "예매 3위 · 급상승"
+   "hotLabel": "예매 2위 · 급상승"
   },
   {
    "id": "kopis-PF304806",
@@ -51436,6 +50809,23 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF303490_261015_150455.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303490",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF306014",
+   "title": "디어클라우드 연말 콘서트: Merry Christmas & Farewell, Week2",
+   "theme": "performance",
+   "genre": "대중음악",
+   "hot": false,
+   "startDate": "2026-12-25",
+   "endDate": "2026-12-26",
+   "region": "서울",
+   "address": "서보아트스페이스(서보미술문화공간)[서울]",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF306014_261110_154519.gif",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF306014",
    "source": "kopis"
   },
   {
@@ -51630,7 +51020,7 @@
    "title": "박서진 전국투어 콘서트, MY NAME IS SEOJIN: 갓 [서울]",
    "theme": "performance",
    "genre": "대중음악",
-   "hot": true,
+   "hot": false,
    "startDate": "2026-12-25",
    "endDate": "2026-12-26",
    "region": "서울",
@@ -51640,8 +51030,7 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305469_261104_142830.jpg",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305469",
-   "source": "kopis",
-   "hotLabel": "예매 8위 · 급상승"
+   "source": "kopis"
   },
   {
    "id": "kopis-PF290130",
@@ -52186,7 +51575,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305472",
    "source": "kopis",
-   "hotLabel": "예매 37위 · 급상승"
+   "hotLabel": "예매 41위 · 급상승"
   },
   {
    "id": "kopis-PF298258",
@@ -52465,7 +51854,7 @@
    "title": "탁재훈쇼: 탁월한 쇼맨 [울산]",
    "theme": "performance",
    "genre": "대중음악",
-   "hot": false,
+   "hot": true,
    "startDate": "2026-12-25",
    "endDate": "2026-12-25",
    "region": "울산",
@@ -52475,7 +51864,8 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305840_261109_154114.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305840",
-   "source": "kopis"
+   "source": "kopis",
+   "hotLabel": "예매 42위 · 급상승"
   },
   {
    "id": "kopis-PF302898",
@@ -53360,7 +52750,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301701",
    "source": "kopis",
-   "hotLabel": "예매 25위 · 급상승"
+   "hotLabel": "예매 23위 · 급상승"
   },
   {
    "id": "kopis-PF303413",
@@ -54636,7 +54026,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305815",
    "source": "kopis",
-   "hotLabel": "예매 5위 · 급상승"
+   "hotLabel": "예매 3위 · 급상승"
   },
   {
    "id": "kopis-PF304073",
@@ -54824,7 +54214,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF303361",
    "source": "kopis",
-   "hotLabel": "예매 11위"
+   "hotLabel": "예매 15위"
   },
   {
    "id": "kopis-PF304238",
@@ -54898,7 +54288,7 @@
    "id": "tour-386053",
    "title": "평창송어축제",
    "theme": "festival",
-   "hot": true,
+   "hot": false,
    "startDate": "2027-01-01",
    "endDate": "2027-01-31",
    "region": "강원",
@@ -54908,8 +54298,7 @@
    "image": "https://tong.visitkorea.or.kr/cms/resource/81/4002581_image2_1.jpg",
    "tel": "033-336-4000",
    "link": null,
-   "source": "tourapi",
-   "hotLabel": "블로그 81건"
+   "source": "tourapi"
   },
   {
    "id": "kopis-PF304555",
@@ -55052,7 +54441,7 @@
    "title": "자우림 단독 콘서트: MIDNIGHT EXPRESS [대전]",
    "theme": "performance",
    "genre": "대중음악",
-   "hot": true,
+   "hot": false,
    "startDate": "2027-01-02",
    "endDate": "2027-01-02",
    "region": "대전",
@@ -55062,8 +54451,7 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305492_261104_154110.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305492",
-   "source": "kopis",
-   "hotLabel": "예매 50위 · 급상승"
+   "source": "kopis"
   },
   {
    "id": "kopis-PF304994",
@@ -55353,7 +54741,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304965",
    "source": "kopis",
-   "hotLabel": "예매 20위"
+   "hotLabel": "예매 18위"
   },
   {
    "id": "kopis-PF305152",
@@ -55512,7 +54900,7 @@
    "id": "tour-507599",
    "title": "얼음나라화천 산천어축제",
    "theme": "festival",
-   "hot": true,
+   "hot": false,
    "startDate": "2027-01-09",
    "endDate": "2027-01-31",
    "region": "강원",
@@ -55522,8 +54910,7 @@
    "image": "https://tong.visitkorea.or.kr/cms/resource/46/4071246_image2_1.jpg",
    "tel": "1688-3005",
    "link": null,
-   "source": "tourapi",
-   "hotLabel": "블로그 33건 · 급상승"
+   "source": "tourapi"
   },
   {
    "id": "kopis-PF305023",
@@ -55609,7 +54996,7 @@
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301684",
    "source": "kopis",
-   "hotLabel": "예매 48위 · 급상승"
+   "hotLabel": "예매 45위 · 급상승"
   },
   {
    "id": "kopis-PF303465",
@@ -55694,6 +55081,57 @@
    "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF301394_260921_130122.gif",
    "tel": null,
    "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF301394",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF304970",
+   "title": "백설공주 [안산]",
+   "theme": "performance",
+   "genre": "뮤지컬",
+   "hot": false,
+   "startDate": "2027-01-10",
+   "endDate": "2027-01-10",
+   "region": "경기",
+   "address": "안산올림픽기념관",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304970_261030_151505.jpg",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304970",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF304797",
+   "title": "칼라치 콰르텟",
+   "theme": "performance",
+   "genre": "서양음악(클래식)",
+   "hot": false,
+   "startDate": "2027-01-10",
+   "endDate": "2027-01-10",
+   "region": "서울",
+   "address": "예술의전당 [서울]",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF304797_261029_111118.gif",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF304797",
+   "source": "kopis"
+  },
+  {
+   "id": "kopis-PF305757",
+   "title": "콧구멍을 후비면 [수원]",
+   "theme": "performance",
+   "genre": "뮤지컬",
+   "hot": false,
+   "startDate": "2027-01-10",
+   "endDate": "2027-01-10",
+   "region": "경기",
+   "address": "장안구민회관 한누리아트홀",
+   "lat": null,
+   "lng": null,
+   "image": "https://www.kopis.or.kr/upload/pfmPoster/PF_PF305757_261109_132228.gif",
+   "tel": null,
+   "link": "https://www.kopis.or.kr/por/db/pblprfr/pblprfrView.do?menuId=MNU_00020&mt20Id=PF305757",
    "source": "kopis"
   }
  ]
