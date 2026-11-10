@@ -1,0 +1,12 @@
+{
+  "name": "tourhelper",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "지금 가면 좋은 곳 / 곧 시작하는 행사를 모아 보여 주는 놀거리 도우미",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "fetch": "node scripts/fetch-events.mjs",
+    "sample": "node scripts/fetch-events.mjs --sample"
+  }
+}
